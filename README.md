@@ -22,10 +22,21 @@ This is **Giscussions**, a fork focused on maintaining upstream compatibility wh
 ### Fork-specific additions currently implemented
 
 - Configurable branding visibility via `data-show-branding` / `showBranding`
+- Author labels prefer display names when available, with username fallback
 
 ---
 
 ## 🆕 Recent fork changes
+
+### 2026-04-06
+
+**Changed**
+
+- Prefer comment and reply author display names in the UI, with username fallback and secondary handle display when applicable
+
+**Fixed**
+
+- Query author display names through schema-safe GraphQL actor fragments for `User` and `Organization` to avoid runtime errors on `Actor` fields
 
 ### 2026-04-05
 

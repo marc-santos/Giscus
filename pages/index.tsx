@@ -60,6 +60,7 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
     author: {
       avatarUrl: 'https://avatars.githubusercontent.com/u/43739539?v=4',
       login: 'marc-santos',
+      name: 'Marc Santos',
       url: 'https://github.com/marc-santos',
     },
     authorAssociation: 'APP',

@@ -7,6 +7,18 @@ writing, this is a rolling-release project without any meaningful versioning
 whatsoever. Tags/releases may be created for the sole purpose of documenting
 major updates to the project.
 
+## 2026-04-06
+
+### Changed
+
+- Prefer comment and reply author display names in the UI, with username
+  fallback and secondary handle display when applicable.
+
+### Fixed
+
+- Query author display names through schema-safe GraphQL actor fragments for
+  `User` and `Organization` to avoid runtime errors on `Actor` fields.
+
 ## 2026-04-05
 
 ### Added

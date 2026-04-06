@@ -10,6 +10,12 @@ const ADD_DISCUSSION_REPLY_QUERY = `
           avatarUrl
           login
           url
+          ... on User {
+            name
+          }
+          ... on Organization {
+            name
+          }
         }
         viewerDidAuthor
         createdAt

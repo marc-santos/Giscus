@@ -20,6 +20,7 @@ const COPY_BUTTON_HTML = `
 const GhostUser: GUser = {
   avatarUrl: 'https://avatars.githubusercontent.com/u/10137?s=64&v=4',
   login: 'ghost',
+  name: 'ghost',
   url: 'https://github.com/ghost',
 };
 

@@ -13,6 +13,12 @@ const ADD_DISCUSSION_COMMENT_QUERY = `
           avatarUrl
           login
           url
+          ... on User {
+            name
+          }
+          ... on Organization {
+            name
+          }
         }
         viewerDidAuthor
         createdAt
@@ -37,6 +43,12 @@ const ADD_DISCUSSION_COMMENT_QUERY = `
               avatarUrl
               login
               url
+              ... on User {
+                name
+              }
+              ... on Organization {
+                name
+              }
             }
             createdAt
             url

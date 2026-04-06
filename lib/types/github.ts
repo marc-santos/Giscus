@@ -3,6 +3,7 @@ import { Reactions } from '../reactions';
 export interface GUser {
   avatarUrl: string;
   login: string;
+  name?: string | null;
   url: string;
 }
 

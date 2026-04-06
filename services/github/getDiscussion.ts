@@ -37,6 +37,12 @@ const DISCUSSION_QUERY = `
         avatarUrl
         login
         url
+        ... on User {
+          name
+        }
+        ... on Organization {
+          name
+        }
       }
       viewerDidAuthor
       createdAt
@@ -61,6 +67,12 @@ const DISCUSSION_QUERY = `
             avatarUrl
             login
             url
+            ... on User {
+              name
+            }
+            ... on Organization {
+              name
+            }
           }
           viewerDidAuthor
           createdAt
@@ -110,6 +122,7 @@ const GET_DISCUSSION_QUERY = (type: 'term' | 'number') => `
     viewer {
       avatarUrl
       login
+      name
       url
     }
     ${type === 'term' ? SEARCH_QUERY : SPECIFIC_QUERY}

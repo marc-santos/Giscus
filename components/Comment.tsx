@@ -37,6 +37,11 @@ export default function Comment({
   const hasUnfetchedReplies = !hasNextPage && remainingReplies > 0;
 
   const { token } = useContext(AuthContext);
+  const authorName = comment.author.name || comment.author.login;
+  const authorHandle =
+    comment.author.name && comment.author.name !== comment.author.login
+      ? `@${comment.author.login}`
+      : null;
 
   const updateReactions = useCallback(
     (reaction: Reaction, promise: Promise<unknown>) =>
@@ -90,12 +95,15 @@ export default function Comment({
                   src={comment.author.avatarUrl}
                   width="30"
                   height="30"
-                  alt={`@${comment.author.login}`}
+                  alt={`${authorName} avatar`}
                   loading="lazy"
                 />
                 <span className="link-primary overflow-hidden text-ellipsis font-semibold">
-                  {comment.author.login}
+                  {authorName}
                 </span>
+                {authorHandle ? (
+                  <span className="color-text-secondary ml-1 text-xs">{authorHandle}</span>
+                ) : null}
               </a>
               <a
                 rel="nofollow noopener noreferrer"

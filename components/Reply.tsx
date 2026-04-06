@@ -20,6 +20,9 @@ export default function Reply({ reply, onReplyUpdate }: IReplyProps) {
       onReplyUpdate(updateCommentReaction(reply, content), promise),
     [reply, onReplyUpdate],
   );
+  const authorName = reply.author.name || reply.author.login;
+  const authorHandle =
+    reply.author.name && reply.author.name !== reply.author.login ? `@${reply.author.login}` : null;
 
   const hidden = reply.deletedAt || reply.isMinimized;
 
@@ -39,7 +42,7 @@ export default function Reply({ reply, onReplyUpdate }: IReplyProps) {
               src={reply.author.avatarUrl}
               width="30"
               height="30"
-              alt={`@${reply.author.login}`}
+              alt={`${authorName} avatar`}
               loading="lazy"
             />
           </a>
@@ -55,8 +58,11 @@ export default function Reply({ reply, onReplyUpdate }: IReplyProps) {
                   className="flex min-w-0 items-center"
                 >
                   <span className="link-primary overflow-hidden text-ellipsis font-semibold">
-                    {reply.author.login}
+                    {authorName}
                   </span>
+                  {authorHandle ? (
+                    <span className="color-text-secondary ml-1 text-xs">{authorHandle}</span>
+                  ) : null}
                 </a>
                 <a
                   rel="nofollow noopener noreferrer"
