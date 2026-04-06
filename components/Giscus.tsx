@@ -64,6 +64,7 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
   const mainCommentBox = (
     <CommentBox
       discussionId={data.discussion.id}
+      discussionUrl={data.discussion.url}
       context={repo}
       onSubmit={addNewComment}
       onDiscussionCreateRequest={handleDiscussionCreateRequest}

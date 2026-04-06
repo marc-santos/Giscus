@@ -11,6 +11,7 @@ import { renderMarkdown } from '../services/github/markdown';
 
 interface CommentBoxProps {
   discussionId?: string;
+  discussionUrl?: string;
   context?: string;
   replyToId?: string;
   className?: string;
@@ -20,6 +21,7 @@ interface CommentBoxProps {
 
 export default function CommentBox({
   discussionId,
+  discussionUrl,
   context,
   replyToId,
   className = '',
@@ -249,13 +251,25 @@ export default function CommentBox({
               {isReply ? t('reply') : t('comment')}
             </button>
           ) : (
-            <a
-              className="btn btn-primary inline-flex items-center ml-1 rounded-md border hover:no-underline"
-              target="_top"
-              href={loginUrl}
-            >
-              <MarkGithubIcon className="mr-2" fill="currentColor" /> {t('signInWithGitHub')}
-            </a>
+            <>
+              {discussionUrl ? (
+                <a
+                  className="btn ml-1 inline-flex items-center rounded-md border hover:no-underline"
+                  href={discussionUrl}
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  <MarkGithubIcon className="mr-2" fill="currentColor" /> {t('viewOnGitHub')}
+                </a>
+              ) : null}
+              <a
+                className="btn btn-primary inline-flex items-center ml-1 rounded-md border hover:no-underline"
+                target="_top"
+                href={loginUrl}
+              >
+                <MarkGithubIcon className="mr-2" fill="currentColor" /> {t('signInWithGitHub')}
+              </a>
+            </>
           )}
         </div>
       </div>

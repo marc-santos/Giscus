@@ -9,6 +9,11 @@ major updates to the project.
 
 ## 2026-04-06
 
+### Added
+
+- Show a **View on GitHub** action beside **Sign in with GitHub** for
+  logged-out users when the mapped discussion already exists.
+
 ### Changed
 
 - Prefer comment and reply author display names in the UI, with username

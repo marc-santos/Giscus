@@ -24,12 +24,17 @@ This is **Giscussions**, a fork focused on maintaining upstream compatibility wh
 - Configurable branding visibility via `data-show-branding` / `showBranding`
 - Author labels prefer display names when available, with username fallback
 - Reactions are shown inline in the comment header metadata row
+- Logged-out users can open existing mapped threads via a **View on GitHub** button
 
 ---
 
 ## 🆕 Recent fork changes
 
 ### 2026-04-06
+
+**Added**
+
+- Show a **View on GitHub** action beside **Sign in with GitHub** for logged-out users when the mapped discussion already exists
 
 **Changed**
 
@@ -55,7 +60,7 @@ When giscus loads, the GitHub Discussions search API is used to find the discuss
 
 If no matching discussion is found, a discussion can be created the first time someone comments or reacts.
 
-To comment, visitors authorize the giscus app using GitHub OAuth, or comment directly on GitHub.
+To comment, visitors authorize the giscus app using GitHub OAuth. When visitors are not signed in and a mapped discussion already exists, giscus shows a **View on GitHub** button next to **Sign in with GitHub** so they can open the discussion directly. Alternatively, visitors can comment directly on GitHub.
 
 ---
 
