@@ -29,13 +29,18 @@ interface IBaseComment {
   id: string;
   author: IUser;
   viewerDidAuthor: boolean;
+  viewerCanUpdate: boolean;
+  viewerCanDelete: boolean;
   createdAt: string;
   url: string;
   authorAssociation: ICommentAuthorAssociation;
   lastEditedAt: string | null;
   deletedAt: string | null;
   isMinimized: boolean;
+  body: string;
   bodyHTML: string;
+  editHistory: string[];
+  includesCreatedEdit: boolean;
   reactions: IReactionGroups;
 }
 

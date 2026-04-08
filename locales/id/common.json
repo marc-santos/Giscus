@@ -76,5 +76,15 @@
   "MEMBER": "Anggota",
   "NONE": "Tidak ada",
   "OWNER": "Pemilik",
-  "APP": "Aplikasi"
+  "APP": "Aplikasi",
+  "edit": "Edit",
+  "delete": "Hapus",
+  "save": "Simpan",
+  "confirmDeleteComment": "Apakah Anda yakin ingin menghapus komentar ini?",
+  "created": "dibuat",
+  "editCount": {
+    "0": "{{count}} suntingan",
+    "one": "{{count}} suntingan",
+    "other": "{{count}} suntingan"
+  }
 }

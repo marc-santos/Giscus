@@ -116,5 +116,15 @@
   "MEMBER": "عضو",
   "NONE": "لا شيء",
   "OWNER": "المالك",
-  "APP": "التطبيق"
+  "APP": "التطبيق",
+  "edit": "تعديل",
+  "delete": "حذف",
+  "save": "حفظ",
+  "confirmDeleteComment": "هل أنت متأكد أنك تريد حذف هذا التعليق؟",
+  "created": "أُنشئ",
+  "editCount": {
+    "0": "{{count}} تعديلات",
+    "one": "{{count}} تعديل",
+    "other": "{{count}} تعديلات"
+  }
 }

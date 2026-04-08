@@ -76,5 +76,15 @@
   "MEMBER": "成员",
   "NONE": "无",
   "OWNER": "所有者",
-  "APP": "App"
+  "APP": "App",
+  "edit": "编辑",
+  "delete": "删除",
+  "save": "保存",
+  "confirmDeleteComment": "您确定要删除此评论吗？",
+  "created": "创建于",
+  "editCount": {
+    "0": "{{count}} 次编辑",
+    "one": "{{count}} 次编辑",
+    "other": "{{count}} 次编辑"
+  }
 }

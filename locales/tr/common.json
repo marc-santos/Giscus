@@ -92,5 +92,15 @@
   "MEMBER": "Üye",
   "NONE": "Hiç",
   "OWNER": "Sahip",
-  "APP": "Uygulama"
+  "APP": "Uygulama",
+  "edit": "Düzenle",
+  "delete": "Sil",
+  "save": "Kaydet",
+  "confirmDeleteComment": "Bu yorumu silmek istediğinizden emin misiniz?",
+  "created": "oluşturuldu",
+  "editCount": {
+    "0": "{{count}} düzenleme",
+    "one": "{{count}} düzenleme",
+    "other": "{{count}} düzenleme"
+  }
 }

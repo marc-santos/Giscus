@@ -76,5 +76,15 @@
   "MEMBER": "成員",
   "NONE": "冇",
   "OWNER": "所有者",
-  "APP": "App"
+  "APP": "App",
+  "edit": "編輯",
+  "delete": "刪除",
+  "save": "儲存",
+  "confirmDeleteComment": "您確定要刪除此留言嗎？",
+  "created": "建立於",
+  "editCount": {
+    "0": "{{count}} 次編輯",
+    "one": "{{count}} 次編輯",
+    "other": "{{count}} 次編輯"
+  }
 }

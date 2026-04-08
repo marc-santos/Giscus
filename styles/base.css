@@ -608,6 +608,34 @@ img.emoji {
   @apply flex content-center justify-between mb-3 gap-2;
 }
 
+.gsc-edited-summary {
+  @apply cursor-pointer text-xs list-none;
+}
+
+.gsc-edited-summary::-webkit-details-marker {
+  display: none;
+}
+
+.gsc-edited-popover {
+  @apply fixed z-10 rounded border p-2 text-xs shadow-lg min-w-[160px];
+}
+
+.gsc-edited-popover-header {
+  @apply font-semibold mb-1;
+}
+
+.gsc-edited-popover-line {
+  @apply py-0.5;
+}
+
+.gsc-edited-popover-created {
+  @apply mt-1 border-t pt-1 color-text-secondary;
+}
+
+.gsc-edited-details {
+  @apply inline-block;
+}
+
 .gsc-comment-reactions {
   @apply flex items-start justify-end ml-4 gap-2;
 }

@@ -9,6 +9,51 @@ import { addCorsHeaders } from '../../../lib/cors';
 import { digestMessage } from '../../../lib/utils';
 import { check } from '../../../services/github/oauth';
 
+function sanitizeDiscussionViewerFields(data: IGiscussion): IGiscussion {
+  return {
+    ...data,
+    discussion: {
+      ...data.discussion,
+      reactions: Object.fromEntries(
+        Object.entries(data.discussion.reactions).map(([key, reaction]) => [
+          key,
+          { ...reaction, viewerHasReacted: false },
+        ]),
+      ) as IGiscussion['discussion']['reactions'],
+      comments: data.discussion.comments.map((comment) => ({
+        ...comment,
+        viewerDidAuthor: false,
+        viewerCanUpdate: false,
+        viewerCanDelete: false,
+        viewerHasUpvoted: false,
+        viewerCanUpvote: false,
+        reactions: Object.fromEntries(
+          Object.entries(comment.reactions).map(([key, reaction]) => [
+            key,
+            { ...reaction, viewerHasReacted: false },
+          ]),
+        ) as typeof comment.reactions,
+        replies: comment.replies.map((reply) => ({
+          ...reply,
+          viewerDidAuthor: false,
+          viewerCanUpdate: false,
+          viewerCanDelete: false,
+          reactions: Object.fromEntries(
+            Object.entries(reply.reactions).map(([key, reaction]) => [
+              key,
+              { ...reaction, viewerHasReacted: false },
+            ]),
+          ) as typeof reply.reactions,
+        })),
+      })),
+    },
+  };
+}
+
+function sanitizeUnauthenticatedDiscussion(data: IGiscussion): IGiscussion {
+  return sanitizeDiscussionViewerFields(data);
+}
+
 async function get(req: NextApiRequest, res: NextApiResponse<IGiscussion | IError>) {
   const params = {
     repo: req.query.repo as string,
@@ -26,17 +71,28 @@ async function get(req: NextApiRequest, res: NextApiResponse<IGiscussion | IErro
   }
 
   const userToken = req.headers.authorization?.split('Bearer ')[1];
-  let token = userToken;
-  if (!token) {
-    try {
-      token = await getAppAccessToken(params.repo);
-    } catch (error) {
-      res.status(403).json({ error: error.message });
-      return;
-    }
+
+  let appToken: string;
+  try {
+    appToken = await getAppAccessToken(params.repo);
+  } catch (error) {
+    res.status(403).json({ error: error.message });
+    return;
   }
 
-  const response = await getDiscussion(params, token);
+  const token = userToken || appToken;
+  let response = await getDiscussion(params, token);
+
+  // If user-scoped lookup fails to find a discussion, retry with app token.
+  // This prevents false negatives that can lead to duplicate thread creation.
+  let usedAppFallback = false;
+  if (userToken && 'data' in response && 'search' in response.data) {
+    const { discussionCount } = response.data.search;
+    if (!discussionCount) {
+      response = await getDiscussion(params, appToken);
+      usedAppFallback = true;
+    }
+  }
 
   if ('message' in response) {
     if (response.message.includes('Bad credentials')) {
@@ -88,6 +144,18 @@ async function get(req: NextApiRequest, res: NextApiResponse<IGiscussion | IErro
   }
 
   const adapted = adaptDiscussion({ viewer, discussion });
+
+  // Never return app-viewer permissions to an end user.
+  if (!userToken) {
+    res.status(200).json(sanitizeUnauthenticatedDiscussion(adapted));
+    return;
+  }
+
+  if (usedAppFallback) {
+    res.status(200).json(sanitizeDiscussionViewerFields(adapted));
+    return;
+  }
+
   res.status(200).json(adapted);
 }
 

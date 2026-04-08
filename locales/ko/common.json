@@ -92,5 +92,15 @@
   "MEMBER": "멤버",
   "NONE": "없음",
   "OWNER": "소유자",
-  "APP": "앱"
+  "APP": "앱",
+  "edit": "편집",
+  "delete": "삭제",
+  "save": "저장",
+  "confirmDeleteComment": "댓글을 삭제하시겠습니까?",
+  "created": "작성됨",
+  "editCount": {
+    "0": "{{count}} 회 편집",
+    "one": "{{count}} 회 편집",
+    "other": "{{count}} 회 편집"
+  }
 }

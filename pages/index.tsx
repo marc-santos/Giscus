@@ -68,7 +68,10 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
     createdAt: latestCommitData.createdAt,
     deletedAt: null,
     id: 'onboarding',
+    body: '',
     isMinimized: false,
+    editHistory: [],
+    includesCreatedEdit: false,
     lastEditedAt: null,
     reactions: Object.keys(Reactions).reduce((prev, key) => {
       prev[key] = { count: 0, viewerHasReacted: false };
@@ -78,7 +81,9 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
     replyCount: 0,
     upvoteCount: 0,
     url: latestCommitData.commitUrl,
+    viewerCanDelete: false,
     viewerDidAuthor: false,
+    viewerCanUpdate: false,
     viewerHasUpvoted: false,
     viewerCanUpvote: false,
   };

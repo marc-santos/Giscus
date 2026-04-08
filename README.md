@@ -17,6 +17,7 @@ This is **Giscussions**, a fork focused on maintaining upstream compatibility wh
 - Supports custom themes and multiple languages
 - Extensively configurable
 - Automatically fetches new comments and edits from GitHub
+- Inline comment and reply editing with localized edit history details
 - Can be self-hosted
 
 ### Fork-specific additions currently implemented
@@ -25,10 +26,23 @@ This is **Giscussions**, a fork focused on maintaining upstream compatibility wh
 - Author labels prefer display names when available, with username fallback
 - Reactions are shown inline in the comment header metadata row
 - Logged-out users can open existing mapped threads via a **View on GitHub** button
+- Comment and reply authors can edit and delete inline; all visitors can inspect edit history
 
 ---
 
 ## 🆕 Recent fork changes
+
+### 2026-04-08
+
+**Added**
+
+- Inline edit and delete actions for discussion comments and replies when permitted
+- Localized edit history popovers with edit counts, timestamps, and separate created markers
+
+**Fixed**
+
+- Prevent duplicate mapped discussion creation by retrying lookup with app-scoped access when a user-scoped lookup returns no match
+- Sanitize viewer-specific permission flags when returning app-scoped fallback data
 
 ### 2026-04-06
 
@@ -61,6 +75,8 @@ When giscus loads, the GitHub Discussions search API is used to find the discuss
 If no matching discussion is found, a discussion can be created the first time someone comments or reacts.
 
 To comment, visitors authorize the giscus app using GitHub OAuth. When visitors are not signed in and a mapped discussion already exists, giscus shows a **View on GitHub** button next to **Sign in with GitHub** so they can open the discussion directly. Alternatively, visitors can comment directly on GitHub.
+
+For self-hosted multi-user setups, make sure your GitHub App installation visibility allows other users to authorize (see [SELF-HOSTING.md](SELF-HOSTING.md)).
 
 ---
 

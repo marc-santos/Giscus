@@ -99,5 +99,15 @@
   "MEMBER": "Membro",
   "NONE": "Nenhum",
   "OWNER": "Dono",
-  "APP": "App"
+  "APP": "App",
+  "edit": "Editar",
+  "delete": "Excluir",
+  "save": "Salvar",
+  "confirmDeleteComment": "Tem certeza de que deseja excluir este comentário?",
+  "created": "criado",
+  "editCount": {
+    "0": "{{count}} edições",
+    "one": "{{count}} edição",
+    "other": "{{count}} edições"
+  }
 }

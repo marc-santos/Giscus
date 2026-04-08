@@ -108,5 +108,15 @@
   "MEMBER": "Član",
   "NONE": "Ništa",
   "OWNER": "Vlasnik",
-  "APP": "Aplikacija"
+  "APP": "Aplikacija",
+  "edit": "Uredi",
+  "delete": "Izbriši",
+  "save": "Spremi",
+  "confirmDeleteComment": "Jeste li sigurni da želite izbrisati ovaj komentar?",
+  "created": "stvoreno",
+  "editCount": {
+    "0": "{{count}} izmjena",
+    "one": "{{count}} izmjena",
+    "other": "{{count}} izmjene"
+  }
 }

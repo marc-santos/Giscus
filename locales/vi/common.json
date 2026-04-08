@@ -92,5 +92,15 @@
   "MEMBER": "Thành viên",
   "NONE": "Không",
   "OWNER": "Tác giả",
-  "APP": "App"
+  "APP": "App",
+  "edit": "Chỉnh sửa",
+  "delete": "Xóa",
+  "save": "Lưu",
+  "confirmDeleteComment": "Bạn có chắc chắn muốn xóa bình luận này không?",
+  "created": "đã tạo",
+  "editCount": {
+    "0": "{{count}} lần chỉnh sửa",
+    "one": "{{count}} lần chỉnh sửa",
+    "other": "{{count}} lần chỉnh sửa"
+  }
 }

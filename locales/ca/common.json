@@ -92,5 +92,15 @@
   "MEMBER": "Membre",
   "NONE": "Cap",
   "OWNER": "Propietari",
-  "APP": "App"
+  "APP": "App",
+  "edit": "Edita",
+  "delete": "Elimina",
+  "save": "Desa",
+  "confirmDeleteComment": "Esteu segur que voleu suprimir aquest comentari?",
+  "created": "creat",
+  "editCount": {
+    "0": "{{count}} edicions",
+    "one": "{{count}} edicio",
+    "other": "{{count}} edicions"
+  }
 }

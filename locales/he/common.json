@@ -92,5 +92,15 @@
   "MEMBER": "חבר",
   "NONE": "ללא",
   "OWNER": "בעלים",
-  "APP": "אפליקציה"
+  "APP": "אפליקציה",
+  "edit": "ערוך",
+  "delete": "מחק",
+  "save": "שמור",
+  "confirmDeleteComment": "האם אתה בטוח שברצונך למחוק את התגובה הזו?",
+  "created": "נוצר",
+  "editCount": {
+    "0": "{{count}} עריכות",
+    "one": "{{count}} עריכה",
+    "other": "{{count}} עריכות"
+  }
 }

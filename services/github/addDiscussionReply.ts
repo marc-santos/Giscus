@@ -6,6 +6,8 @@ const ADD_DISCUSSION_REPLY_QUERY = `
     addDiscussionReply: addDiscussionComment(input: {body: $body, discussionId: $discussionId, replyToId: $replyToId}) {
       reply: comment {
         id
+        viewerCanUpdate
+        viewerCanDelete
         author {
           avatarUrl
           login
@@ -24,6 +26,7 @@ const ADD_DISCUSSION_REPLY_QUERY = `
         lastEditedAt
         deletedAt
         isMinimized
+        body
         bodyHTML
         reactionGroups {
           content
@@ -31,6 +34,12 @@ const ADD_DISCUSSION_REPLY_QUERY = `
             totalCount
           }
           viewerHasReacted
+        }
+        userContentEdits(first: 20) {
+          nodes {
+            id
+            editedAt
+          }
         }
         replyTo {
           id

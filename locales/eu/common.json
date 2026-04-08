@@ -92,5 +92,15 @@
   "MEMBER": "Kidea",
   "NONE": "Batere ez",
   "OWNER": "Jabea",
-  "APP": "App"
+  "APP": "App",
+  "edit": "Editatu",
+  "delete": "Ezabatu",
+  "save": "Gorde",
+  "confirmDeleteComment": "Ziur zaude iruzkin hau ezabatu nahi duzula?",
+  "created": "sortua",
+  "editCount": {
+    "0": "{{count}} edizio",
+    "one": "{{count}} edizio",
+    "other": "{{count}} edizio"
+  }
 }

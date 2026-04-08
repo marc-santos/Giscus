@@ -33,6 +33,8 @@ const DISCUSSION_QUERY = `
       upvoteCount
       viewerHasUpvoted
       viewerCanUpvote
+      viewerCanUpdate
+      viewerCanDelete
       author {
         avatarUrl
         login
@@ -51,6 +53,7 @@ const DISCUSSION_QUERY = `
       lastEditedAt
       deletedAt
       isMinimized
+      body
       bodyHTML
       reactionGroups {
         content
@@ -59,10 +62,18 @@ const DISCUSSION_QUERY = `
         }
         viewerHasReacted
       }
+      userContentEdits(first: 20) {
+        nodes {
+          id
+          editedAt
+        }
+      }
       replies(last: 100) {
         totalCount
         nodes {
           id
+          viewerCanUpdate
+          viewerCanDelete
           author {
             avatarUrl
             login
@@ -81,6 +92,7 @@ const DISCUSSION_QUERY = `
           lastEditedAt
           deletedAt
           isMinimized
+          body
           bodyHTML
           reactionGroups {
             content
@@ -88,6 +100,12 @@ const DISCUSSION_QUERY = `
               totalCount
             }
             viewerHasReacted
+          }
+          userContentEdits(first: 20) {
+            nodes {
+              id
+              editedAt
+            }
           }
           replyTo {
             id

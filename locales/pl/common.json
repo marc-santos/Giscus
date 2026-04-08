@@ -108,5 +108,15 @@
   "MEMBER": "Member",
   "NONE": "None",
   "OWNER": "Owner",
-  "APP": "App"
+  "APP": "App",
+  "edit": "Edytuj",
+  "delete": "Usuń",
+  "save": "Zapisz",
+  "confirmDeleteComment": "Czy na pewno chcesz usunąć ten komentarz?",
+  "created": "utworzono",
+  "editCount": {
+    "0": "{{count}} edycji",
+    "one": "{{count}} edycja",
+    "other": "{{count}} edycje"
+  }
 }

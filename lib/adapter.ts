@@ -34,9 +34,14 @@ export function adaptReactionGroups(reactionGroups: GReactionGroup[]): IReaction
   }, {}) as IReactionGroups;
 }
 
+function includesCreatedEdit(editHistory: string[], createdAt: string) {
+  return editHistory.includes(createdAt);
+}
+
 export function adaptReply(reply: GReply): IReply {
   const {
     reactionGroups,
+    userContentEdits,
     replyTo: { id: replyToId },
     author: _author,
     ...rest
@@ -44,19 +49,44 @@ export function adaptReply(reply: GReply): IReply {
 
   const reactions = adaptReactionGroups(reactionGroups);
   const author = _author || GhostUser;
+  const editHistory = userContentEdits?.nodes?.map(({ editedAt }) => editedAt) || [];
+  const hasCreatedEdit = includesCreatedEdit(editHistory, rest.createdAt);
 
-  return { ...rest, author, reactions, replyToId };
+  return {
+    ...rest,
+    author,
+    reactions,
+    editHistory,
+    includesCreatedEdit: hasCreatedEdit,
+    replyToId,
+  };
 }
 
 export function adaptComment(comment: GComment): IComment {
-  const { replies: repliesData, reactionGroups, author: _author, ...rest } = comment;
+  const {
+    replies: repliesData,
+    reactionGroups,
+    userContentEdits,
+    author: _author,
+    ...rest
+  } = comment;
   const { totalCount: replyCount, nodes: replyNodes } = repliesData;
 
   const reactions = adaptReactionGroups(reactionGroups);
   const replies = replyNodes.map(adaptReply);
   const author = _author || GhostUser;
+  const editHistory = userContentEdits?.nodes?.map(({ editedAt }) => editedAt) || [];
+  const hasCreatedEdit = includesCreatedEdit(editHistory, rest.createdAt);
 
-  return { ...rest, author, replyCount, reactions, replies };
+  return {
+    ...rest,
+    author,
+    replyCount,
+    reactions,
+    editHistory,
+    includesCreatedEdit: hasCreatedEdit,
+    replies,
+  };
 }
 
 export function adaptDiscussion({

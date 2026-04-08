@@ -108,5 +108,15 @@
   "MEMBER": "Člen",
   "NONE": "Žádný",
   "OWNER": "Vlastník",
-  "APP": "Aplikace"
+  "APP": "Aplikace",
+  "edit": "Upravit",
+  "delete": "Smazat",
+  "save": "Uložit",
+  "confirmDeleteComment": "Opravdu chcete smazat tento komentář?",
+  "created": "vytvořeno",
+  "editCount": {
+    "0": "{{count}} úprav",
+    "one": "{{count}} úprava",
+    "other": "{{count}} úpravy"
+  }
 }

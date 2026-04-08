@@ -92,5 +92,15 @@
   "MEMBER": "Tag",
   "NONE": "Nincs",
   "OWNER": "Tulajdonos",
-  "APP": "Alkalmazás"
+  "APP": "Alkalmazás",
+  "edit": "Szerkesztés",
+  "delete": "Törlés",
+  "save": "Mentés",
+  "confirmDeleteComment": "Biztosan törölni szeretnéd ezt a megjegyzést?",
+  "created": "létrehozva",
+  "editCount": {
+    "0": "{{count}} szerkesztés",
+    "one": "{{count}} szerkesztés",
+    "other": "{{count}} szerkesztés"
+  }
 }

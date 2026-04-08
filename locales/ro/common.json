@@ -100,5 +100,15 @@
   "MEMBER": "Member",
   "NONE": "None",
   "OWNER": "Owner",
-  "APP": "App"
+  "APP": "App",
+  "edit": "Editează",
+  "delete": "Șterge",
+  "save": "Salvează",
+  "confirmDeleteComment": "Ești sigur că vrei să ștergi acest comentariu?",
+  "created": "creat",
+  "editCount": {
+    "0": "{{count}} editări",
+    "one": "{{count}} editare",
+    "other": "{{count}} editări"
+  }
 }

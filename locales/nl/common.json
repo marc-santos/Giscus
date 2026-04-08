@@ -92,5 +92,15 @@
   "MEMBER": "Lid",
   "NONE": "Geen",
   "OWNER": "Eigenaar",
-  "APP": "App"
+  "APP": "App",
+  "edit": "Bewerken",
+  "delete": "Verwijderen",
+  "save": "Opslaan",
+  "confirmDeleteComment": "Weet je zeker dat je deze reactie wilt verwijderen?",
+  "created": "aangemaakt",
+  "editCount": {
+    "0": "{{count}} bewerkingen",
+    "one": "{{count}} bewerking",
+    "other": "{{count}} bewerkingen"
+  }
 }

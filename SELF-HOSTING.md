@@ -86,8 +86,12 @@ the web app. You can use this guide as a reference.
   ![image](https://user-images.githubusercontent.com/6379424/120403034-9abf1e00-c36d-11eb-8242-707989d750ee.png)
 
   - You don't need to change anything in this section. Leave "**Where can this
-    GitHub App be installed?**" set to "**Only on this account**", unless you
-    also accept any users to use your service on their repositories.
+    GitHub App be installed?**" set to "**Only on this account**" if only you
+    will sign in.
+
+  - If other users need to sign in to your widget, set this to
+    "**Any account**". Otherwise, those users may see a GitHub 404 page during
+    OAuth authorization.
 
 ### Create GitHub App
 

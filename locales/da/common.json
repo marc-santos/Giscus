@@ -92,5 +92,15 @@
   "MEMBER": "Member",
   "NONE": "None",
   "OWNER": "Owner",
-  "APP": "App"
+  "APP": "App",
+  "edit": "Rediger",
+  "delete": "Slet",
+  "save": "Gem",
+  "confirmDeleteComment": "Er du sikker på, at du vil slette denne kommentar?",
+  "created": "oprettet",
+  "editCount": {
+    "0": "{{count}} redigeringer",
+    "one": "{{count}} redigering",
+    "other": "{{count}} redigeringer"
+  }
 }

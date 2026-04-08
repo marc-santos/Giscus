@@ -92,5 +92,15 @@
   "MEMBER": "A'zo",
   "NONE": "Hech narsa",
   "OWNER": "Egasi",
-  "APP": "Ilova"
+  "APP": "Ilova",
+  "edit": "Tahrirlash",
+  "delete": "O'chirish",
+  "save": "Saqlash",
+  "confirmDeleteComment": "Ushbu izohni o'chirishni xohlaysizmi?",
+  "created": "yaratilgan",
+  "editCount": {
+    "0": "{{count}} tahrir",
+    "one": "{{count}} tahrir",
+    "other": "{{count}} tahrir"
+  }
 }

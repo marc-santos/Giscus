@@ -92,5 +92,15 @@
   "MEMBER": "メンバー",
   "NONE": "なし",
   "OWNER": "所有者",
-  "APP": "アプリ"
+  "APP": "アプリ",
+  "edit": "編集",
+  "delete": "削除",
+  "save": "保存",
+  "confirmDeleteComment": "このコメントを削除してもよろしいですか？",
+  "created": "作成日時",
+  "editCount": {
+    "0": "{{count}} 件の編集",
+    "one": "{{count}} 件の編集",
+    "other": "{{count}} 件の編集"
+  }
 }

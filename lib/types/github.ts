@@ -27,18 +27,29 @@ export interface GReactionGroup {
   viewerHasReacted: boolean;
 }
 
+export interface GUserContentEdit {
+  id: string;
+  editedAt: string;
+}
+
 interface GBaseComment {
   id: string;
   author: GRepositoryDiscussionAuthor | null;
   viewerDidAuthor: boolean;
+  viewerCanUpdate: boolean;
+  viewerCanDelete: boolean;
   createdAt: string;
   url: string;
   authorAssociation: GCommentAuthorAssociation;
   lastEditedAt: string | null;
   deletedAt: string | null;
   isMinimized: boolean;
+  body: string;
   bodyHTML: string;
   reactionGroups: GReactionGroup[];
+  userContentEdits?: {
+    nodes: GUserContentEdit[];
+  };
 }
 
 export interface GReply extends GBaseComment {

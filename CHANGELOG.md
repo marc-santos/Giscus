@@ -7,6 +7,25 @@ writing, this is a rolling-release project without any meaningful versioning
 whatsoever. Tags/releases may be created for the sole purpose of documenting
 major updates to the project.
 
+## 2026-04-08
+
+### Added
+
+- Add inline edit and delete actions for discussion comments and replies when
+  the viewer has permission.
+
+- Add localized edit history popovers that show edit counts and timestamps for
+  comments and replies.
+
+### Fixed
+
+- Retry discussion lookup with app-token fallback when a user-token search
+  returns no match, preventing duplicate discussion creation across different
+  signed-in users.
+
+- Keep viewer-specific permission fields sanitized when using app-scoped
+  discussion data for unauthenticated/fallback responses.
+
 ## 2026-04-06
 
 ### Added

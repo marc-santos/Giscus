@@ -92,5 +92,15 @@
   "MEMBER": "Ano",
   "NONE": "Nenio",
   "OWNER": "Posedanto",
-  "APP": "Aplikaĵo"
+  "APP": "Aplikaĵo",
+  "edit": "Redakti",
+  "delete": "Forigi",
+  "save": "Konservi",
+  "confirmDeleteComment": "Ĉu vi certas, ke vi volas forigi tiun ĉi komenton?",
+  "created": "kreita",
+  "editCount": {
+    "0": "{{count}} redaktoj",
+    "one": "{{count}} redakto",
+    "other": "{{count}} redaktoj"
+  }
 }
