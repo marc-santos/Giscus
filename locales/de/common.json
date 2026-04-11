@@ -31,7 +31,7 @@
   "loading": "Laden",
   "loadingComments": "Lade Kommentare…",
   "loadingPreview": "Lade Vorschau…",
-  "poweredBy": "Unterstützt von <a>giscus</a>",
+  "poweredBy": "Unterstützt von \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Älteste",
   "newest": "Neueste",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Wähle deine Reaktion",
   "addTheReaction": "Reaktion {{reaction}} hinzufügen",
   "removeTheReaction": "Reaktion {{reaction}} entfernen",
-  "signInToAddYourReaction": "<a>Melde dich an</a> um deine Reaktion hinzuzufügen.",
+  "signInToAddYourReaction": "\u003ca\u003eMelde dich an\u003c/a\u003e um deine Reaktion hinzuzufügen.",
   "youMustBeSignedInToAddReactions": "Du musst angemeldet sein um eine Reaktion hinzufügen zu können.",
   "peopleReactedWith": {
     "0": "{{count}} Personen haben mit {{reaction}} {{emoji}} reagiert",
@@ -102,5 +102,6 @@
     "0": "{{count}} Bearbeitungen",
     "one": "{{count}} Bearbeitung",
     "other": "{{count}} Bearbeitungen"
-  }
+  },
+  "confirmDeleteReply": "Diesen Kommentar wirklich löschen?"
 }

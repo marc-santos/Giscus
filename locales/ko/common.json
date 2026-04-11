@@ -31,7 +31,7 @@
   "loading": "불러오는 중",
   "loadingComments": "댓글 불러오는 중…",
   "loadingPreview": "미리보기 불러오는 중…",
-  "poweredBy": "Powered by <a>giscus</a>",
+  "poweredBy": "Powered by \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "오래된 순",
   "newest": "새로운 순",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "반응을 고르세요",
   "addTheReaction": "{{reaction}} 반응 추가",
   "removeTheReaction": "{{reaction}} 반응 제거",
-  "signInToAddYourReaction": "<a>로그인</a>하고 반응을 남기세요.",
+  "signInToAddYourReaction": "\u003ca\u003e로그인\u003c/a\u003e하고 반응을 남기세요.",
   "youMustBeSignedInToAddReactions": "반응을 남기려면 로그인해야 합니다.",
   "peopleReactedWith": {
     "0": "{{count}}명이 {{reaction}} {{emoji}}로 반응함",
@@ -102,5 +102,6 @@
     "0": "{{count}} 회 편집",
     "one": "{{count}} 회 편집",
     "other": "{{count}} 회 편집"
-  }
+  },
+  "confirmDeleteReply": "댓글을 삭제하시겠습니까?"
 }

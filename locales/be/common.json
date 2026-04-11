@@ -41,7 +41,7 @@
   "loading": "Ладаваньне",
   "loadingComments": "Ладаваньне камэнтароў…",
   "loadingPreview": "Ладаваньне прагляду…",
-  "poweredBy": "сілкуецца ад <a>giscus</a>",
+  "poweredBy": "сілкуецца ад \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Найстарэйшыя",
   "newest": "Найноўшыя",
   "showPreviousReplies": {
@@ -81,7 +81,7 @@
   "pickYourReaction": "Абярыце сваю рэакцыю",
   "addTheReaction": "Дадаць рэакцыю {{reaction}}",
   "removeTheReaction": "Выдаліць рэакцыю {{reaction}}",
-  "signInToAddYourReaction": "<a>Увайдзіце</a>, каб дадаць рэакцыю.",
+  "signInToAddYourReaction": "\u003ca\u003eУвайдзіце\u003c/a\u003e, каб дадаць рэакцыю.",
   "youMustBeSignedInToAddReactions": "Вы мусіце ўвайсьці, каб дадаць рэакцыі.",
   "peopleReactedWith": {
     "0": "{{count}} асобаў адрэаґавалі з {{emoji}} {{reaction}}",
@@ -118,5 +118,6 @@
     "0": "{{count}} змен",
     "one": "{{count}} змена",
     "other": "{{count}} змены"
-  }
+  },
+  "confirmDeleteReply": "Вы ўпэўнены, што хочаце выдаліць гэты каментарый?"
 }

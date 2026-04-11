@@ -31,7 +31,7 @@
   "loading": "Ŝargante",
   "loadingComments": "Ŝargante komentojn...",
   "loadingPreview": "Ŝargante antaŭrigardon...",
-  "poweredBy": "funkciigita per <a>giscus</a>",
+  "poweredBy": "funkciigita per \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Plej malnova",
   "newest": "Plej nova",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Elektu vian reagon",
   "addTheReaction": "Aldonu reagon {{reaction}}",
   "removeTheReaction": "Forigu reagon {{reaction}}",
-  "signInToAddYourReaction": "<a>Ensalutu</a> por aldoni vian reagon.",
+  "signInToAddYourReaction": "\u003ca\u003eEnsalutu\u003c/a\u003e por aldoni vian reagon.",
   "youMustBeSignedInToAddReactions": "Vi devas esti ensalutinta por aldoni reagojn.",
   "peopleReactedWith": {
     "0": "{{count}} personoj reagis per {{reaction}} {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} redaktoj",
     "one": "{{count}} redakto",
     "other": "{{count}} redaktoj"
-  }
+  },
+  "confirmDeleteReply": "Ĉu vi certas, ke vi volas forigi tiun ĉi komenton?"
 }

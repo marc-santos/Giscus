@@ -31,7 +31,7 @@
   "loading": "בטעינה",
   "loadingComments": "טוען תגובות…",
   "loadingPreview": "טוען תצוגה מקדימה…",
-  "poweredBy": "מופעל על-ידי <a>giscus</a>",
+  "poweredBy": "מופעל על-ידי \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "ישן ביותר",
   "newest": "חדש ביותר",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "בחר סמלון",
   "addTheReaction": "הוסף את הסמלון {{reaction}}",
   "removeTheReaction": "הסר את הסמלון {{reaction}}",
-  "signInToAddYourReaction": "<a>התחבר</a> בכדי להוסיף סמלון.",
+  "signInToAddYourReaction": "\u003ca\u003eהתחבר\u003c/a\u003e בכדי להוסיף סמלון.",
   "youMustBeSignedInToAddReactions": "יש להתחבר בכדי להוסיף סמלונים.",
   "peopleReactedWith": {
     "0": "{{count}} אנשים הביעו רגש {{reaction}} {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} עריכות",
     "one": "{{count}} עריכה",
     "other": "{{count}} עריכות"
-  }
+  },
+  "confirmDeleteReply": "האם אתה בטוח שברצונך למחוק את התגובה הזו?"
 }

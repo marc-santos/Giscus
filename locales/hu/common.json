@@ -31,7 +31,7 @@
   "loading": "Betöltés",
   "loadingComments": "Hozzászólások betöltése…",
   "loadingPreview": "Előnézet betöltése…",
-  "poweredBy": "a hozzászólásokat a <a>giscus</a> motor hajtja",
+  "poweredBy": "a hozzászólásokat a \u003ca\u003egiscus\u003c/a\u003e motor hajtja",
   "oldest": "Legrégebbi",
   "newest": "Legújabb",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Válassz reakciót",
   "addTheReaction": "{{reaction}} reakció hozzáadása",
   "removeTheReaction": "{{reaction}} reakció eltávolítása",
-  "signInToAddYourReaction": "<a>Jelentkezz be</a> reakció hozzáadásához.",
+  "signInToAddYourReaction": "\u003ca\u003eJelentkezz be\u003c/a\u003e reakció hozzáadásához.",
   "youMustBeSignedInToAddReactions": "Reakció hozzáadásához be kell jelentkezned.",
   "peopleReactedWith": {
     "0": "{{count}} {{reaction}} reakció {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} szerkesztés",
     "one": "{{count}} szerkesztés",
     "other": "{{count}} szerkesztés"
-  }
+  },
+  "confirmDeleteReply": "Biztosan törölni szeretnéd ezt a megjegyzést?"
 }

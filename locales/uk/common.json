@@ -36,7 +36,7 @@
   "loading": "Завантаження",
   "loadingComments": "Завантаження коментарів…",
   "loadingPreview": "Завантаження попереднього перегляду…",
-  "poweredBy": "powered by <a>giscus</a>",
+  "poweredBy": "powered by \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Старіші",
   "newest": "Новіші",
   "showPreviousReplies": {
@@ -74,7 +74,7 @@
   "pickYourReaction": "Оберіть реакцію",
   "addTheReaction": "Додати реакцію {{reaction}}",
   "removeTheReaction": "Видалити реакцію {{reaction}}",
-  "signInToAddYourReaction": "<a>Увійти</a> щоб додати реакцію.",
+  "signInToAddYourReaction": "\u003ca\u003eУвійти\u003c/a\u003e щоб додати реакцію.",
   "youMustBeSignedInToAddReactions": "Ви маєйте увійти, щоб додати реакцію.",
   "peopleReactedWith": {
     "one": "{{count}} людина відреагувала {{reaction}} {{emoji}}",
@@ -110,5 +110,6 @@
     "0": "{{count}} змін",
     "one": "{{count}} зміна",
     "other": "{{count}} зміни"
-  }
+  },
+  "confirmDeleteReply": "Ви впевнені, що хочете видалити цей коментар?"
 }

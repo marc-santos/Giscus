@@ -6,6 +6,7 @@ import { IErrorMessage, IResizeHeightMessage, ISignOutMessage } from '../lib/typ
 import { cleanAnchor } from '../lib/utils';
 import { createDiscussion } from '../services/giscus/createDiscussion';
 import { getToken } from '../services/giscus/token';
+import DialogProvider from './DialogProvider';
 
 interface IWidgetProps {
   origin: string;
@@ -75,7 +76,9 @@ export default function Widget({ origin, session }: IWidgetProps) {
 
   return ready ? (
     <AuthContext.Provider value={{ token, origin, getLoginUrl, onSignOut: handleSignOut }}>
-      <Giscus onDiscussionCreateRequest={handleDiscussionCreateRequest} onError={handleError} />
+      <DialogProvider>
+        <Giscus onDiscussionCreateRequest={handleDiscussionCreateRequest} onError={handleError} />
+      </DialogProvider>
     </AuthContext.Provider>
   ) : null;
 }

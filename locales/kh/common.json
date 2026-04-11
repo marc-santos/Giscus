@@ -31,7 +31,7 @@
   "loading": "កំពុងផ្ទុក",
   "loadingComments": "កំពុងផ្ទុកមតិ…",
   "loadingPreview": "កំពុងផ្ទុកការមើលលទ្ធផលទុកមុន…",
-  "poweredBy": "ដំណើរការដោយ <a>giscus</a>",
+  "poweredBy": "ដំណើរការដោយ \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "ចាស់បំផុត",
   "newest": "ថ្មីបំផុត",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "សូមជ្រើសរើសរូបប្រតិកម្ម",
   "addTheReaction": "បន្ថែមប្រតិកម្ម {{reaction}}",
   "removeTheReaction": "ដកប្រតិកម្ម {{reaction}} ចេញ",
-  "signInToAddYourReaction": "<a>ចូលគណនី</a> ដើម្បីអាចដាក់រូបប្រតិកម្មបាន",
+  "signInToAddYourReaction": "\u003ca\u003eចូលគណនី\u003c/a\u003e ដើម្បីអាចដាក់រូបប្រតិកម្មបាន",
   "youMustBeSignedInToAddReactions": "អ្នកត្រូវតែធ្វើការចូលគណនីទើបអាចដាក់រូបប្រតិកម្មបាន",
   "peopleReactedWith": {
     "0": "មនុស្សចំនួន {{count}} នាក់បានប្រតិកម្មចំនួន {{reaction}} {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} ការកែសម្រួល",
     "one": "{{count}} ការកែសម្រួល",
     "other": "{{count}} ការកែសម្រួល"
-  }
+  },
+  "confirmDeleteReply": "តើអ្នកប្រាកដថាចង់លុបមតិយោបល់នេះទេ?"
 }

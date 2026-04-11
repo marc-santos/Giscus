@@ -27,10 +27,24 @@ This is **Giscussions**, a fork focused on maintaining upstream compatibility wh
 - Reactions are shown inline in the comment header metadata row
 - Logged-out users can open existing mapped threads via a **View on GitHub** button
 - Comment and reply authors can edit and delete inline; all visitors can inspect edit history
+- Delete and error flows use custom themed dialogs instead of browser popups
+- Delete confirmation overlays are scoped to the relevant comment/reply area,
+  with blur and rounded-corner clipping
 
 ---
 
 ## 🆕 Recent fork changes
+
+### 2026-04-11
+
+**Changed**
+
+- Replace browser confirm/alert popups in delete and error flows with custom themed dialogs
+
+**Fixed**
+
+- Improve dialog accessibility (focus trap, escape handling, focus restoration, ARIA semantics)
+- Scope delete overlays to the relevant comment/reply container, including rounded-corner-aware blur
 
 ### 2026-04-08
 

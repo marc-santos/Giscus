@@ -36,7 +36,7 @@
   "loading": "Încărcare",
   "loadingComments": "Încărcare comentarii…",
   "loadingPreview": "Încărcare previzualizare…",
-  "poweredBy": "oferit de <a>giscus</a>",
+  "poweredBy": "oferit de \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Vechi",
   "newest": "Nou",
   "showPreviousReplies": {
@@ -74,7 +74,7 @@
   "pickYourReaction": "Alege reacția",
   "addTheReaction": "Add {{reaction}} reaction",
   "removeTheReaction": "Remove {{reaction}} reaction",
-  "signInToAddYourReaction": "<a>Logare</a> pentru a adăuga reacția",
+  "signInToAddYourReaction": "\u003ca\u003eLogare\u003c/a\u003e pentru a adăuga reacția",
   "youMustBeSignedInToAddReactions": "Trebuie să fii logat pentru a adăuga reacții.",
   "peopleReactedWith": {
     "0": "{{count}} persoare au reacționat folosind {{reaction}} {{emoji}}",
@@ -110,5 +110,6 @@
     "0": "{{count}} editări",
     "one": "{{count}} editare",
     "other": "{{count}} editări"
-  }
+  },
+  "confirmDeleteReply": "Ești sigur că vrei să ștergi acest comentariu?"
 }

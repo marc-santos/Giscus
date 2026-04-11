@@ -21,7 +21,7 @@
   "loading": "กำลังโหลด",
   "loadingComments": "กำลังโหลดความคิดเห็น…",
   "loadingPreview": "กำลังโหลดตัวอย่าง…",
-  "poweredBy": "ขับเคลื่อนด้วย <a>giscus</a>",
+  "poweredBy": "ขับเคลื่อนด้วย \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "เก่าที่สุด",
   "newest": "ใหม่ที่สุด",
   "showPreviousReplies": {
@@ -53,7 +53,7 @@
   "pickYourReaction": "เลือกรีแอคชันของคุณ",
   "addTheReaction": "เพิ่มรีแอคชัน {{reaction}}",
   "removeTheReaction": "ลบรีแอคชัน {{reaction}}",
-  "signInToAddYourReaction": "<a>เข้าสู่ระบบ</a>เพื่อเพิ่มรีแอคชันของคุณ",
+  "signInToAddYourReaction": "\u003ca\u003eเข้าสู่ระบบ\u003c/a\u003eเพื่อเพิ่มรีแอคชันของคุณ",
   "youMustBeSignedInToAddReactions": "คุณต้องเข้าสู่ระบบเพื่อเพิ่มรีแอคชันของคุณ",
   "peopleReactedWith": {
     "other": "{{count}} คนรีแอคด้วย{{emoji}} {{reaction}}"
@@ -86,5 +86,6 @@
     "0": "{{count}} การแก้ไข",
     "one": "{{count}} การแก้ไข",
     "other": "{{count}} การแก้ไข"
-  }
+  },
+  "confirmDeleteReply": "คุณแน่ใจหรือไม่ว่าต้องการลบความคิดเห็นนี้?"
 }

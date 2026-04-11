@@ -31,7 +31,7 @@
   "loading": "Đang tải",
   "loadingComments": "Đang tải thêm bình luận…",
   "loadingPreview": "Đang tải bản xem trước…",
-  "poweredBy": "powered by <a>giscus</a>",
+  "poweredBy": "powered by \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Cũ",
   "newest": "Mới",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Chọn cảm xúc của bạn",
   "addTheReaction": "Thêm cảm xúc {{reaction}}",
   "removeTheReaction": "Xóa cảm xúc {{reaction}}",
-  "signInToAddYourReaction": "<a>Đăng nhập</a> để bày tỏ cảm xúc của bạn.",
+  "signInToAddYourReaction": "\u003ca\u003eĐăng nhập\u003c/a\u003e để bày tỏ cảm xúc của bạn.",
   "youMustBeSignedInToAddReactions": "Bạn phải đăng nhập để bày tỏ cảm xúc.",
   "peopleReactedWith": {
     "0": "{{count}} người đã bày tỏ cảm xúc với {{reaction}} {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} lần chỉnh sửa",
     "one": "{{count}} lần chỉnh sửa",
     "other": "{{count}} lần chỉnh sửa"
-  }
+  },
+  "confirmDeleteReply": "Bạn có chắc chắn muốn xóa bình luận này không?"
 }

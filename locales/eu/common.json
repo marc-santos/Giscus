@@ -31,7 +31,7 @@
   "loading": "Kargatzen",
   "loadingComments": "Iruzkinak kargatzen…",
   "loadingPreview": "Aurrebista kargatzen…",
-  "poweredBy": "<a>Giscus</a>-ek garatua",
+  "poweredBy": "\u003ca\u003eGiscus\u003c/a\u003e-ek garatua",
   "oldest": "Zaharrena",
   "newest": "Berriena",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Hautatu zure erreakzioa",
   "addTheReaction": "Gehitu {{reaction}} erreakzioa",
   "removeTheReaction": "Ezabatu {{reaction}} erreakzioa",
-  "signInToAddYourReaction": "Erreakzioa gehitzeko <a>hasi saioa</a>.",
+  "signInToAddYourReaction": "Erreakzioa gehitzeko \u003ca\u003ehasi saioa\u003c/a\u003e.",
   "youMustBeSignedInToAddReactions": "Erreakzioak gehitzeko saioa hasi behar duzu.",
   "peopleReactedWith": {
     "0": "{{count}} pertsonek {{reaction}} {{emoji}}rekin erreakzionatu dute",
@@ -102,5 +102,6 @@
     "0": "{{count}} edizio",
     "one": "{{count}} edizio",
     "other": "{{count}} edizio"
-  }
+  },
+  "confirmDeleteReply": "Ziur zaude iruzkin hau ezabatu nahi duzula?"
 }

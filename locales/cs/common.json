@@ -41,7 +41,7 @@
   "loading": "Načítání",
   "loadingComments": "Načítání komentářů…",
   "loadingPreview": "Načítání náhledu…",
-  "poweredBy": "poháněno službou <a>giscus</a>",
+  "poweredBy": "poháněno službou \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Nejstarší",
   "newest": "Nejnovější",
   "showPreviousReplies": {
@@ -81,7 +81,7 @@
   "pickYourReaction": "Vyberte svou reakci",
   "addTheReaction": "Přidat reakci {{reaction}}",
   "removeTheReaction": "Odebrat reakci {{reaction}}",
-  "signInToAddYourReaction": "<a>Přihlaste se</a> k přidání reakce.",
+  "signInToAddYourReaction": "\u003ca\u003ePřihlaste se\u003c/a\u003e k přidání reakce.",
   "youMustBeSignedInToAddReactions": "Pro přidávání reakcí se musíte přihlásit.",
   "peopleReactedWith": {
     "0": "{{count}} lidí reagovalo reakcí {{reaction}} {{emoji}}",
@@ -118,5 +118,6 @@
     "0": "{{count}} úprav",
     "one": "{{count}} úprava",
     "other": "{{count}} úpravy"
-  }
+  },
+  "confirmDeleteReply": "Opravdu chcete smazat tento komentář?"
 }

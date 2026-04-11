@@ -31,7 +31,7 @@
   "loading": "Cargando",
   "loadingComments": "Cargando comentarios…",
   "loadingPreview": "Cargando vista previa…",
-  "poweredBy": "Desarrollado por <a>giscus</a>",
+  "poweredBy": "Desarrollado por \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Antiguo",
   "newest": "Nuevo",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Elige tu reacción",
   "addTheReaction": "Agregar reacción de {{reaction}}",
   "removeTheReaction": "Eliminar reacción de {{reaction}}",
-  "signInToAddYourReaction": "<a>Inicia sesión</a> para agregar tu reacción.",
+  "signInToAddYourReaction": "\u003ca\u003eInicia sesión\u003c/a\u003e para agregar tu reacción.",
   "youMustBeSignedInToAddReactions": "Debes iniciar sesión para agregar reacciones.",
   "peopleReactedWith": {
     "0": "{{count}} personas reaccionaron con {{reaction}} {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} ediciones",
     "one": "{{count}} edición",
     "other": "{{count}} ediciones"
-  }
+  },
+  "confirmDeleteReply": "¿Estás seguro de que quieres eliminar este comentario?"
 }

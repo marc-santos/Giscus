@@ -26,12 +26,12 @@
     "one": "{{count}} objet masqué",
     "other": "{{count}} objets masqués"
   },
-  "genericError": "Une erreur s'est produite : {{message}}",
+  "genericError": "Une erreur s\u0027est produite : {{message}}",
   "loadMore": "Charger plus",
   "loading": "Chargement en cours",
   "loadingComments": "Chargement des commentaires…",
-  "loadingPreview": "Chargement de l'aperçu…",
-  "poweredBy": "propulsé par <a>giscus</a>",
+  "loadingPreview": "Chargement de l\u0027aperçu…",
+  "poweredBy": "propulsé par \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Ancien",
   "newest": "Récent",
   "showPreviousReplies": {
@@ -50,15 +50,15 @@
   "thisCommentWasHidden": "Ce commentaire a été masqué.",
   "write": "Écrire",
   "preview": "Aperçu",
-  "enableFixedWidth": "Activer la police à largeur fixe (monospace) dans l'éditeur",
-  "disableFixedWidth": "Désactiver la police à largeur fixe (monospace) dans l'éditeur",
+  "enableFixedWidth": "Activer la police à largeur fixe (monospace) dans l\u0027éditeur",
+  "disableFixedWidth": "Désactiver la police à largeur fixe (monospace) dans l\u0027éditeur",
   "lastEditedAt": "Dernier changement le {{date}}",
   "writeAComment": "Écrire un commentaire",
-  "signInToComment": "S'identifier pour pouvoir commenter",
+  "signInToComment": "S\u0027identifier pour pouvoir commenter",
   "stylingWithMarkdownIsSupported": "Mise en forme Markdown disponible",
   "signOut": "Se déconnecter",
   "cancel": "Annuler",
-  "signInWithGitHub": "S'identifier avec GitHub",
+  "signInWithGitHub": "S\u0027identifier avec GitHub",
   "writeAReply": "Écrire une réponse",
   "upvote": "Voter pour",
   "youMustBeSignedInToUpvote": "Vous devez être identifié·e pour voter.",
@@ -67,12 +67,12 @@
   "pickYourReaction": "Choisir une réaction",
   "addTheReaction": "Ajouter la réaction {{reaction}}",
   "removeTheReaction": "Supprimer la réaction {{reaction}}",
-  "signInToAddYourReaction": "<a>S'identifier</a> pour réagir.",
+  "signInToAddYourReaction": "\u003ca\u003eS\u0027identifier\u003c/a\u003e pour réagir.",
   "youMustBeSignedInToAddReactions": "Vous devez être identifié·e pour réagir.",
   "peopleReactedWith": {
-    "0": "Personne n'a réagi avec l'{{emoji}} {{reaction}}",
-    "one": "{{count}} personne a réagi avec l'{{emoji}} {{reaction}}",
-    "other": "{{count}} personnes ont réagi avec l'{{emoji}} {{reaction}}"
+    "0": "Personne n\u0027a réagi avec l\u0027{{emoji}} {{reaction}}",
+    "one": "{{count}} personne a réagi avec l\u0027{{emoji}} {{reaction}}",
+    "other": "{{count}} personnes ont réagi avec l\u0027{{emoji}} {{reaction}}"
   },
   "emoji": "emoji",
   "nothingToPreview": "Rien à prévisualiser",
@@ -102,5 +102,6 @@
     "0": "{{count}} modification",
     "one": "{{count}} modification",
     "other": "{{count}} modifications"
-  }
+  },
+  "confirmDeleteReply": "Êtes-vous sûr de vouloir supprimer ce commentaire ?"
 }

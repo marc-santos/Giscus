@@ -18,7 +18,7 @@ import { updateDiscussionComment } from '../services/github/updateDiscussionComm
 import CommentBox from './CommentBox';
 import ReactButtons from './ReactButtons';
 import Reply from './Reply';
-import { AuthContext } from '../lib/context';
+import { AuthContext, DialogContext } from '../lib/context';
 import { useDateFormatter, useGiscusTranslation, useRelativeTimeFormatter } from '../lib/i18n';
 
 interface ICommentProps {
@@ -44,6 +44,7 @@ export default function Comment({
   const [editBody, setEditBody] = useState(comment.body);
   const [isSavingEdit, setIsSavingEdit] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
+  const commentCardRef = useRef<HTMLDivElement>(null);
   const editedDetailsRef = useRef<HTMLDetailsElement>(null);
   const editedSummaryRef = useRef<HTMLElement>(null);
   const [popoverStyle, setPopoverStyle] = useState<CSSProperties>({});
@@ -55,6 +56,7 @@ export default function Comment({
   const hasUnfetchedReplies = !hasNextPage && remainingReplies > 0;
 
   const { token } = useContext(AuthContext);
+  const { confirm } = useContext(DialogContext);
   const authorName = comment.author.name || comment.author.login;
   const authorHandle =
     comment.author.name && comment.author.name !== comment.author.login
@@ -167,7 +169,16 @@ export default function Comment({
   }, [comment.body]);
 
   const handleDelete = useCallback(async () => {
-    if (!token || !onCommentUpdate || !window.confirm(t('confirmDeleteComment'))) return;
+    if (!token || !onCommentUpdate) return;
+
+    const shouldDelete = await confirm({
+      message: t('confirmDeleteComment'),
+      confirmText: t('delete'),
+      cancelText: t('cancel'),
+      destructive: true,
+      scopeElement: commentCardRef.current,
+    });
+    if (!shouldDelete) return;
 
     setIsDeleting(true);
     try {
@@ -182,11 +193,12 @@ export default function Comment({
     } finally {
       setIsDeleting(false);
     }
-  }, [comment, onCommentUpdate, t, token]);
+  }, [comment, confirm, onCommentUpdate, t, token]);
 
   return (
     <div className="gsc-comment">
       <div
+        ref={commentCardRef}
         className={`color-bg-primary w-full min-w-0 rounded-md border ${
           comment.viewerDidAuthor ? 'color-box-border-info' : 'color-border-primary'
         }`}

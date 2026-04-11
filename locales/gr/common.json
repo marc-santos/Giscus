@@ -31,7 +31,7 @@
   "loading": "Φόρτωση",
   "loadingComments": "Φόρτωση σχολίων…",
   "loadingPreview": "Φόρτωση προεπισκόπησης",
-  "poweredBy": "λειτουργεί με <a>giscus</a>",
+  "poweredBy": "λειτουργεί με \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Παλαιότερα",
   "newest": "Νεότερα",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Επιλέξτε την αντίδρασή σας",
   "addTheReaction": "Προσθήκη {{reaction}} αντίδρασης",
   "removeTheReaction": "Αφαίρεση {{reaction}} αντίδρασης",
-  "signInToAddYourReaction": "<a>Συνδεθείτε</a> για να προσθέσετε την αντίδρασή σας.",
+  "signInToAddYourReaction": "\u003ca\u003eΣυνδεθείτε\u003c/a\u003e για να προσθέσετε την αντίδρασή σας.",
   "youMustBeSignedInToAddReactions": "Πρέπει να είστε συνδεμένος για να προσθέσετε αντιδράσεις.",
   "peopleReactedWith": {
     "0": "{{count}} άτομα αντέδρασαν με {{reaction}} {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} επεξεργασίες",
     "one": "{{count}} επεξεργασία",
     "other": "{{count}} επεξεργασίες"
-  }
+  },
+  "confirmDeleteReply": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το σχόλιο;"
 }

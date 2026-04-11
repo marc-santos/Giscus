@@ -21,7 +21,7 @@
   "loading": "載入中",
   "loadingComments": "正在載入留言……",
   "loadingPreview": "正在載入預覽……",
-  "poweredBy": "由 <a>giscus</a> 技術支援",
+  "poweredBy": "由 \u003ca\u003egiscus\u003c/a\u003e 技術支援",
   "oldest": "最舊",
   "newest": "最新",
   "showPreviousReplies": {
@@ -53,7 +53,7 @@
   "pickYourReaction": "挑選您的反應",
   "addTheReaction": "表示 {{reaction}}",
   "removeTheReaction": "取消表示 {{reaction}}",
-  "signInToAddYourReaction": "<a>登入</a>以送出反應。",
+  "signInToAddYourReaction": "\u003ca\u003e登入\u003c/a\u003e以送出反應。",
   "youMustBeSignedInToAddReactions": "您必須登入才能送出反應。",
   "peopleReactedWith": {
     "other": "{{count}} 人表示 {{reaction}}"
@@ -86,5 +86,6 @@
     "0": "{{count}} 次編輯",
     "one": "{{count}} 次編輯",
     "other": "{{count}} 次編輯"
-  }
+  },
+  "confirmDeleteReply": "您確定要刪除此留言嗎？"
 }

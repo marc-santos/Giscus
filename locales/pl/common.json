@@ -41,7 +41,7 @@
   "loading": "Wczytywanie",
   "loadingComments": "Wczytywanie komentarzy…",
   "loadingPreview": "Wczytywanie podglądu…",
-  "poweredBy": "zasilane przez <a>giscus</a>",
+  "poweredBy": "zasilane przez \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Najstarszego",
   "newest": "Najnowszego",
   "showPreviousReplies": {
@@ -81,7 +81,7 @@
   "pickYourReaction": "Wybierz reakcję",
   "addTheReaction": "Add {{reaction}} reaction",
   "removeTheReaction": "Remove {{reaction}} reaction",
-  "signInToAddYourReaction": "<a>Zaloguj się</a> aby dodać reakcję.",
+  "signInToAddYourReaction": "\u003ca\u003eZaloguj się\u003c/a\u003e aby dodać reakcję.",
   "youMustBeSignedInToAddReactions": "Musisz być zalogowany/a aby dodawać reakcje.",
   "peopleReactedWith": {
     "0": "{{count}} osób zareagowało używając {{emoji}} {{reaction}}",
@@ -118,5 +118,6 @@
     "0": "{{count}} edycji",
     "one": "{{count}} edycja",
     "other": "{{count}} edycje"
-  }
+  },
+  "confirmDeleteReply": "Czy na pewno chcesz usunąć ten komentarz?"
 }

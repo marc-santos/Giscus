@@ -31,7 +31,7 @@
   "loading": "بارگزاری",
   "loadingComments": "بارگزاری دیدگاه‌ها …",
   "loadingPreview": "بارگزاری پیش‌نمایش …",
-  "poweredBy": "قدرت گرفته از <a>giscus</a>",
+  "poweredBy": "قدرت گرفته از \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "قدیمی‌تر",
   "newest": "جدیدتر",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "یکی از بازخوردها را انتخاب کنید",
   "addTheReaction": "اضافه کردن {{reaction}}",
   "removeTheReaction": "حذف {{reaction}}",
-  "signInToAddYourReaction": "<a>وارد شدن</a> برای درج بازخورد.",
+  "signInToAddYourReaction": "\u003ca\u003eوارد شدن\u003c/a\u003e برای درج بازخورد.",
   "youMustBeSignedInToAddReactions": "برای درج بازخورد، باید به حساب کاربری وارد شده باشید.",
   "peopleReactedWith": {
     "0": "{{count}} نفر بازخورد خود را با {{reaction}} {{emoji}} .ثبت کرده‌اند",
@@ -102,5 +102,6 @@
     "0": "{{count}} ویرایش",
     "one": "{{count}} ویرایش",
     "other": "{{count}} ویرایش"
-  }
+  },
+  "confirmDeleteReply": "آیا مطمئن هستید که می‌خواهید این نظر را حذف کنید؟"
 }

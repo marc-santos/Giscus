@@ -7,7 +7,7 @@ import { useDateFormatter, useGiscusTranslation, useRelativeTimeFormatter } from
 import { deleteDiscussionComment } from '../services/github/deleteDiscussionComment';
 import { updateDiscussionComment } from '../services/github/updateDiscussionComment';
 import { useContext } from 'react';
-import { AuthContext } from '../lib/context';
+import { AuthContext, DialogContext } from '../lib/context';
 
 interface IReplyProps {
   reply: IReply;
@@ -19,10 +19,12 @@ export default function Reply({ reply, onReplyUpdate }: IReplyProps) {
   const formatDate = useDateFormatter();
   const formatDateDistance = useRelativeTimeFormatter();
   const { token } = useContext(AuthContext);
+  const { confirm } = useContext(DialogContext);
   const [isEditing, setIsEditing] = useState(false);
   const [editBody, setEditBody] = useState(reply.body);
   const [isSavingEdit, setIsSavingEdit] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
+  const replyContainerRef = useRef<HTMLDivElement>(null);
   const editedDetailsRef = useRef<HTMLDetailsElement>(null);
   const editedSummaryRef = useRef<HTMLElement>(null);
   const [popoverStyle, setPopoverStyle] = useState<CSSProperties>({});
@@ -107,7 +109,16 @@ export default function Reply({ reply, onReplyUpdate }: IReplyProps) {
   }, [editBody, onReplyUpdate, reply, token]);
 
   const handleDelete = useCallback(async () => {
-    if (!token || !window.confirm(t('confirmDeleteComment'))) return;
+    if (!token) return;
+
+    const shouldDelete = await confirm({
+      message: t('confirmDeleteReply'),
+      confirmText: t('delete'),
+      cancelText: t('cancel'),
+      destructive: true,
+      scopeElement: replyContainerRef.current,
+    });
+    if (!shouldDelete) return;
 
     setIsDeleting(true);
     try {
@@ -122,7 +133,7 @@ export default function Reply({ reply, onReplyUpdate }: IReplyProps) {
     } finally {
       setIsDeleting(false);
     }
-  }, [onReplyUpdate, reply, t, token]);
+  }, [confirm, onReplyUpdate, reply, t, token]);
 
   const handleEditCancel = useCallback(() => {
     setEditBody(reply.body);
@@ -130,7 +141,7 @@ export default function Reply({ reply, onReplyUpdate }: IReplyProps) {
   }, [reply.body]);
 
   return (
-    <div className="gsc-reply">
+    <div className="gsc-reply" ref={replyContainerRef}>
       <div className="gsc-tl-line" />
       <div className={`flex ${hidden ? 'items-center' : ''}`}>
         <div className="gsc-reply-author-avatar">

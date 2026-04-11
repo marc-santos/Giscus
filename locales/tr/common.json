@@ -31,7 +31,7 @@
   "loading": "Yükleniyor",
   "loadingComments": "Yorumlar yükleniyor…",
   "loadingPreview": "Önizleme yükleniyor…",
-  "poweredBy": "<a>giscus</a> tarafından sağlanıyor",
+  "poweredBy": "\u003ca\u003egiscus\u003c/a\u003e tarafından sağlanıyor",
   "oldest": "En eski",
   "newest": "En yeni",
   "showPreviousReplies": {
@@ -40,9 +40,9 @@
     "other": "Önceki {{count}} yanıtı göster"
   },
   "seePreviousRepliesOnGitHub": {
-    "0": "Önceki {{count}} yanıtı GitHub'da gör",
-    "one": "Önceki {{count}} yanıtı GitHub'da gör",
-    "other": "Önceki {{count}} yanıtı GitHub'da gör"
+    "0": "Önceki {{count}} yanıtı GitHub\u0027da gör",
+    "one": "Önceki {{count}} yanıtı GitHub\u0027da gör",
+    "other": "Önceki {{count}} yanıtı GitHub\u0027da gör"
   },
   "edited": "düzenlenmiş",
   "thisCommentWasDeleted": "Bu yorum silinmiş.",
@@ -67,7 +67,7 @@
   "pickYourReaction": "Tepki seçin",
   "addTheReaction": "{{reaction}} tepkisini ekle",
   "removeTheReaction": "{{reaction}} tepkisini kaldır",
-  "signInToAddYourReaction": "Tepki vermek için <a>giriş yap</a>.",
+  "signInToAddYourReaction": "Tepki vermek için \u003ca\u003egiriş yap\u003c/a\u003e.",
   "youMustBeSignedInToAddReactions": "Tepki eklemek için giriş yapmış olmalısın.",
   "peopleReactedWith": {
     "0": "{{count}} kişi {{reaction}} {{emoji}}siyle tepki verdi",
@@ -102,5 +102,6 @@
     "0": "{{count}} düzenleme",
     "one": "{{count}} düzenleme",
     "other": "{{count}} düzenleme"
-  }
+  },
+  "confirmDeleteReply": "Bu yorumu silmek istediğinizden emin misiniz?"
 }

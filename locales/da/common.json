@@ -31,7 +31,7 @@
   "loading": "Indlæser",
   "loadingComments": "Indlæser kommentarer…",
   "loadingPreview": "Indlæser forhåndsvisning…",
-  "poweredBy": "drevet af <a>giscus</a>",
+  "poweredBy": "drevet af \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Ældste",
   "newest": "Nyeste",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Vælg din reaktion",
   "addTheReaction": "Tilføj {{reaction}} reaktion",
   "removeTheReaction": "Fjern {{reaction}} reaktion",
-  "signInToAddYourReaction": "<a>Log ind</a> for at tilføje din reaktion.",
+  "signInToAddYourReaction": "\u003ca\u003eLog ind\u003c/a\u003e for at tilføje din reaktion.",
   "youMustBeSignedInToAddReactions": "Du skal være logget ind for at tilføje reaktioner.",
   "peopleReactedWith": {
     "0": "{{count}} personer reagerede med {{reaction}} {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} redigeringer",
     "one": "{{count}} redigering",
     "other": "{{count}} redigeringer"
-  }
+  },
+  "confirmDeleteReply": "Er du sikker på, at du vil slette denne kommentar?"
 }

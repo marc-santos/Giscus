@@ -31,7 +31,7 @@
   "loading": "読み込み中",
   "loadingComments": "コメントを取得中…",
   "loadingPreview": "プレビューを読み込み中…",
-  "poweredBy": "<a>giscus</a>によって作成",
+  "poweredBy": "\u003ca\u003egiscus\u003c/a\u003eによって作成",
   "oldest": "古い順",
   "newest": "新しい順",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "リアクションを選択",
   "addTheReaction": "{{reaction}} をリアクションする",
   "removeTheReaction": "{{reaction}} をリアクション元に戻す",
-  "signInToAddYourReaction": "<a>ログイン</a>してリアクションする",
+  "signInToAddYourReaction": "\u003ca\u003eログイン\u003c/a\u003eしてリアクションする",
   "youMustBeSignedInToAddReactions": "リアクションを追加するにはログインする必要があります",
   "peopleReactedWith": {
     "0": "{{count}} 人が {{reaction}} の{{emoji}}で反応しました",
@@ -102,5 +102,6 @@
     "0": "{{count}} 件の編集",
     "one": "{{count}} 件の編集",
     "other": "{{count}} 件の編集"
-  }
+  },
+  "confirmDeleteReply": "このコメントを削除してもよろしいですか？"
 }

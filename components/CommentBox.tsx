@@ -1,7 +1,7 @@
 import { MarkdownIcon, MarkGithubIcon, SignOutIcon, TypographyIcon } from '@primer/octicons-react';
 import { ChangeEvent, useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { adaptComment, adaptReply, handleCommentClick, processCommentBody } from '../lib/adapter';
-import { AuthContext } from '../lib/context';
+import { AuthContext, DialogContext } from '../lib/context';
 import { useGiscusTranslation } from '../lib/i18n';
 import { IComment, IReply } from '../lib/types/adapter';
 import { resizeTextArea } from '../lib/utils';
@@ -39,7 +39,9 @@ export default function CommentBox({
   const [isFixedWidth, setIsFixedWidth] = useState(false);
   const [lastHeight, setLastHeight] = useState('');
   const { token, origin, getLoginUrl, onSignOut } = useContext(AuthContext);
+  const { alert } = useContext(DialogContext);
   const textarea = useRef<HTMLTextAreaElement>(null);
+  const commentBoxRef = useRef<HTMLFormElement>(null);
   const loginUrl = getLoginUrl(origin);
   const isReply = !!replyToId;
   const placeHolderText = isReply ? t('writeAReply') : t('writeAComment');
@@ -74,7 +76,10 @@ export default function CommentBox({
     const payload = { body: input, discussionId: id, replyToId };
 
     if (!id) {
-      window.alert('Unable to create discussion.');
+      await alert({
+        message: t('genericError', { message: 'Unable to create discussion.' }),
+        scopeElement: commentBoxRef.current,
+      });
       setIsSubmitting(false);
       return;
     }
@@ -103,6 +108,8 @@ export default function CommentBox({
     replyToId,
     onDiscussionCreateRequest,
     token,
+    alert,
+    t,
     onSubmit,
     reset,
   ]);
@@ -130,6 +137,7 @@ export default function CommentBox({
 
   return !isReply || isReplyOpen ? (
     <form
+      ref={commentBoxRef}
       className={`color-bg-primary color-border-primary gsc-comment-box ${
         isReply ? 'gsc-comment-box-is-reply' : ''
       } ${className}`}

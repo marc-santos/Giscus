@@ -64,3 +64,34 @@ export const ConfigContext = createContext<IConfigContext>({
   inputPosition: 'bottom',
   defaultCommentOrder: 'oldest',
 });
+
+export interface IConfirmDialogOptions {
+  message: string;
+  confirmText?: string;
+  cancelText?: string;
+  destructive?: boolean;
+  scopeElement?: HTMLElement | null;
+}
+
+export interface IAlertDialogOptions {
+  message: string;
+  confirmText?: string;
+  scopeElement?: HTMLElement | null;
+}
+
+interface IDialogContext {
+  confirm: (options: IConfirmDialogOptions) => Promise<boolean>;
+  alert: (options: IAlertDialogOptions) => Promise<void>;
+}
+
+export const DialogContext = createContext<IDialogContext>({
+  confirm: async ({ message }) => {
+    if (typeof window === 'undefined') return true;
+    return window.confirm(message);
+  },
+  alert: async ({ message }) => {
+    if (typeof window !== 'undefined') {
+      window.alert(message);
+    }
+  },
+});

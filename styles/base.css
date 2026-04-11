@@ -905,6 +905,44 @@ img.emoji {
   @apply border items-baseline;
 }
 
+.gsc-dialog-backdrop {
+  @apply fixed inset-0 z-50 flex items-center justify-center rounded-md p-4;
+
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+}
+
+.gsc-dialog-backdrop.is-scoped {
+  @apply p-3;
+
+  inset: auto;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.gsc-dialog {
+  @apply w-full max-w-sm rounded-md border p-4 shadow-lg;
+}
+
+.gsc-dialog-message {
+  @apply mb-4 text-sm;
+}
+
+.gsc-dialog-actions {
+  @apply flex justify-end gap-2;
+}
+
+.gsc-dialog-danger {
+  color: var(--color-btn-primary-text);
+  background-color: var(--color-danger-emphasis, var(--color-danger-fg, #d1242f));
+  border-color: var(--color-danger-emphasis, var(--color-danger-fg, #d1242f));
+}
+
+.gsc-dialog-danger:hover {
+  background-color: var(--color-danger-emphasis, var(--color-danger-fg, #d1242f));
+  filter: brightness(0.95);
+}
+
 .gsc-reply {
   @apply relative p-4 pb-2;
 }

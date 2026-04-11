@@ -31,7 +31,7 @@
   "loading": "Carico",
   "loadingComments": "Carico commenti…",
   "loadingPreview": "Carico anteprima…",
-  "poweredBy": "da <a>giscus</a>",
+  "poweredBy": "da \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Vecchio",
   "newest": "Recente",
   "showPreviousReplies": {
@@ -50,8 +50,8 @@
   "thisCommentWasHidden": "Questo commento è stato nascosto.",
   "write": "Scrivi",
   "preview": "Anteprima",
-  "enableFixedWidth": "Abilita il carattere a larghezza fissa (monospazio) nell'editor",
-  "disableFixedWidth": "Disabilita il carattere a larghezza fissa (monospazio) nell'editor",
+  "enableFixedWidth": "Abilita il carattere a larghezza fissa (monospazio) nell\u0027editor",
+  "disableFixedWidth": "Disabilita il carattere a larghezza fissa (monospazio) nell\u0027editor",
   "lastEditedAt": "Modificato il {{date}}",
   "writeAComment": "Scrivi un commento",
   "signInToComment": "Accedi per commentare",
@@ -67,7 +67,7 @@
   "pickYourReaction": "Scegli la tua reazione",
   "addTheReaction": "Aggiungi reazione {{reaction}}",
   "removeTheReaction": "Rimuovi la reazione {{reaction}}",
-  "signInToAddYourReaction": "<a>Accedi</a> per aggiungere la tua reazione.",
+  "signInToAddYourReaction": "\u003ca\u003eAccedi\u003c/a\u003e per aggiungere la tua reazione.",
   "youMustBeSignedInToAddReactions": "Devi accedere per aggiungere reazioni.",
   "peopleReactedWith": {
     "0": "{{count}} persone hanno reagito con {{reaction}} {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} modifiche",
     "one": "{{count}} modifica",
     "other": "{{count}} modifiche"
-  }
+  },
+  "confirmDeleteReply": "Sei sicuro di voler eliminare questo commento?"
 }

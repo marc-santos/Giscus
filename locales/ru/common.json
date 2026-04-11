@@ -41,7 +41,7 @@
   "loading": "Загрузка",
   "loadingComments": "Загрузка комментариев…",
   "loadingPreview": "Загрузка предварительного просмотра…",
-  "poweredBy": "управляется <a>giscus</a>",
+  "poweredBy": "управляется \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Старые",
   "newest": "Новые",
   "showPreviousReplies": {
@@ -81,7 +81,7 @@
   "pickYourReaction": "Выберите свой отклик",
   "addTheReaction": "Оставить {{reaction}} отклик",
   "removeTheReaction": "Отменить {{reaction}} отклик",
-  "signInToAddYourReaction": "<a>Войдите</a>, чтобы оставить свой отклик.",
+  "signInToAddYourReaction": "\u003ca\u003eВойдите\u003c/a\u003e, чтобы оставить свой отклик.",
   "youMustBeSignedInToAddReactions": "Вы должны авторизоваться, чтобы оставить отклик.",
   "peopleReactedWith": {
     "0": "{{count}} человек откликнулось с {{reaction}} {{emoji}}",
@@ -118,5 +118,6 @@
     "0": "{{count}} правок",
     "one": "{{count}} правка",
     "other": "{{count}} правки"
-  }
+  },
+  "confirmDeleteReply": "Вы уверены, что хотите удалить этот комментарий?"
 }

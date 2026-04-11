@@ -31,7 +31,7 @@
   "loading": "Зарежда се",
   "loadingComments": "Коментарите се зареждат…",
   "loadingPreview": "Визуализацията се зарежда…",
-  "poweredBy": "задвижвано от <a>giscus</a>",
+  "poweredBy": "задвижвано от \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Най-стари",
   "newest": "Най-нови",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Изберете вашата реакция",
   "addTheReaction": "Добавяне на реакция {{reaction}}",
   "removeTheReaction": "Премахване на реакцията {{reaction}}",
-  "signInToAddYourReaction": "<a>Влезте</a>, за да добавите реакцията си.",
+  "signInToAddYourReaction": "\u003ca\u003eВлезте\u003c/a\u003e, за да добавите реакцията си.",
   "youMustBeSignedInToAddReactions": "Трябва да сте влезли, за да добавяте реакции.",
   "peopleReactedWith": {
     "0": "{{count}} души реагираха с {{emoji}} {{reaction}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} редакции",
     "one": "{{count}} редакция",
     "other": "{{count}} редакции"
-  }
+  },
+  "confirmDeleteReply": "Сигурни ли сте, че искате да изтриете този коментар?"
 }

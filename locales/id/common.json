@@ -21,7 +21,7 @@
   "loading": "Memuat",
   "loadingComments": "Memuat komentar…",
   "loadingPreview": "Memuat pratinjau…",
-  "poweredBy": "diberdayakan oleh <a>giscus</a>",
+  "poweredBy": "diberdayakan oleh \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Terlama",
   "newest": "Terbaru",
   "showPreviousReplies": {
@@ -53,7 +53,7 @@
   "pickYourReaction": "Pilih reaksi Anda",
   "addTheReaction": "Tambahkan reaksi {{reaction}}",
   "removeTheReaction": "Batalkan reaksi {{reaction}}",
-  "signInToAddYourReaction": "<a>Masuk</a> untuk menambahkan reaksi Anda.",
+  "signInToAddYourReaction": "\u003ca\u003eMasuk\u003c/a\u003e untuk menambahkan reaksi Anda.",
   "youMustBeSignedInToAddReactions": "Anda harus masuk untuk menambahkan reaksi.",
   "peopleReactedWith": {
     "other": "{{count}} orang bereaksi dengan {{emoji}} {{reaction}}"
@@ -86,5 +86,6 @@
     "0": "{{count}} suntingan",
     "one": "{{count}} suntingan",
     "other": "{{count}} suntingan"
-  }
+  },
+  "confirmDeleteReply": "Apakah Anda yakin ingin menghapus komentar ini?"
 }

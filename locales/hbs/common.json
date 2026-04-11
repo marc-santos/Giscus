@@ -41,7 +41,7 @@
   "loading": "Učitavanje",
   "loadingComments": "Učitavanje komentara…",
   "loadingPreview": "Učitavanje pregleda…",
-  "poweredBy": "pokrenuto preko <a>giscus</a>-a",
+  "poweredBy": "pokrenuto preko \u003ca\u003egiscus\u003c/a\u003e-a",
   "oldest": "Najstarije",
   "newest": "Najnovije",
   "showPreviousReplies": {
@@ -81,7 +81,7 @@
   "pickYourReaction": "Izaberi reakciju",
   "addTheReaction": "Dodaj {{reaction}} reakciju",
   "removeTheReaction": "Ukloni {{reaction}} reakciju",
-  "signInToAddYourReaction": "<a>Prijavite se</a> da bi dodali reakcije.",
+  "signInToAddYourReaction": "\u003ca\u003ePrijavite se\u003c/a\u003e da bi dodali reakcije.",
   "youMustBeSignedInToAddReactions": "Morate biti prijavljeni da bi dodavali reakcije.",
   "peopleReactedWith": {
     "0": "{{count}} osoba je reagovalo sa {{emoji}} {{reaction}}",
@@ -118,5 +118,6 @@
     "0": "{{count}} izmjena",
     "one": "{{count}} izmjena",
     "other": "{{count}} izmjene"
-  }
+  },
+  "confirmDeleteReply": "Jeste li sigurni da želite izbrisati ovaj komentar?"
 }

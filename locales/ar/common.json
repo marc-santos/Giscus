@@ -46,7 +46,7 @@
   "loading": "يجري التحميل",
   "loadingComments": "تحميل التعليقات…",
   "loadingPreview": "تحميل المعاينة…",
-  "poweredBy": "تعمل بواسطة <a>giscus</a>",
+  "poweredBy": "تعمل بواسطة \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "اﻷقدم",
   "newest": "اﻷحدث",
   "showPreviousReplies": {
@@ -88,7 +88,7 @@
   "pickYourReaction": "اختر تفاعل",
   "addTheReaction": "أضف تفاعل {{reaction}}",
   "removeTheReaction": "احذف تفاعل {{reaction}}",
-  "signInToAddYourReaction": "<a>سجل الدخول</a> ﻹضافة تفاعلك.",
+  "signInToAddYourReaction": "\u003ca\u003eسجل الدخول\u003c/a\u003e ﻹضافة تفاعلك.",
   "youMustBeSignedInToAddReactions": "يجب تسجيل الدخول لتضيف تفاعل.",
   "peopleReactedWith": {
     "0": "{{count}} شخص تفاعل مع {{reaction}} {{emoji}}",
@@ -126,5 +126,6 @@
     "0": "{{count}} تعديلات",
     "one": "{{count}} تعديل",
     "other": "{{count}} تعديلات"
-  }
+  },
+  "confirmDeleteReply": "هل أنت متأكد أنك تريد حذف هذا التعليق؟"
 }

@@ -31,7 +31,7 @@
   "loading": "Laden",
   "loadingComments": "Laden van opmerkingen...",
   "loadingPreview": "Laden van voorbeeld...",
-  "poweredBy": "mogelijk gemaakt door <a>giscus</a>",
+  "poweredBy": "mogelijk gemaakt door \u003ca\u003egiscus\u003c/a\u003e",
   "oldest": "Oudste",
   "newest": "Nieuwste",
   "showPreviousReplies": {
@@ -67,7 +67,7 @@
   "pickYourReaction": "Kies je reactie",
   "addTheReaction": "Voeg {{reaction}} reactie toe",
   "removeTheReaction": "Verwijder {{reaction}} reactie",
-  "signInToAddYourReaction": "<a>Meld aan</a> om je reactie toe te voegen.",
+  "signInToAddYourReaction": "\u003ca\u003eMeld aan\u003c/a\u003e om je reactie toe te voegen.",
   "youMustBeSignedInToAddReactions": "Je moet ingelogd zijn om reacties toe te voegen.",
   "peopleReactedWith": {
     "0": "{{count}} personen hebben gereageerd met {{reaction}} {{emoji}}",
@@ -102,5 +102,6 @@
     "0": "{{count}} bewerkingen",
     "one": "{{count}} bewerking",
     "other": "{{count}} bewerkingen"
-  }
+  },
+  "confirmDeleteReply": "Weet je zeker dat je deze reactie wilt verwijderen?"
 }

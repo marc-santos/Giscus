@@ -7,6 +7,21 @@ writing, this is a rolling-release project without any meaningful versioning
 whatsoever. Tags/releases may be created for the sole purpose of documenting
 major updates to the project.
 
+## 2026-04-11
+
+### Changed
+
+- Replace native browser confirm/alert popups in delete and error flows with
+  custom themed dialogs.
+
+### Fixed
+
+- Improve custom dialog accessibility with keyboard focus trapping, escape
+  handling, focus restoration, and ARIA dialog semantics.
+
+- Scope delete confirmation overlays to the relevant comment/reply container,
+  including blur and rounded-corner clipping that follows the target element.
+
 ## 2026-04-08
 
 ### Added
